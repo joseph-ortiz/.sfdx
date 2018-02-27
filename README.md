@@ -1,0 +1,2 @@
+# .sfdx
+a sfdx dotfile
