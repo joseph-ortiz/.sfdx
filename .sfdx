@@ -1,18 +1,14 @@
 #!/bin/bash
 
+#thanks for René Winkelmeyer for starting these aliases
+#Source: https://developer.salesforce.com/blogs/2018/02/getting-started-salesforce-dx-part-4-5.html
 alias spush='sfdx force:source:push'
 alias spull='sfdx force:source:pull'
 alias screate='sfdx force:org:create -s -f config/project-scratch-def.json -a '
 alias screatepush='sfdx force:org:create -s -f config/project-scratch-def.json && spush'
+
 alias soo='sfdx force:org:open'
 alias sacc='sfdx force:apex:class:create'
-
-
-#sproject() {
-#    sfdx force:project:create -n $1
-#    cd $1
-#    sfdx force:org:create -s -f config/project-scratch-def.json -a $1 -d $2
-#}
 
 sproject() {
     # Check if any arguments are passed
