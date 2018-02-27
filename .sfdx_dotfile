@@ -12,7 +12,7 @@ alias sacc='sfdx force:apex:class:create'
 
 sproject() {
     # Check if any arguments are passed
-    if [ "$#" = 0]; then
+    if [ "$#" = 0 ]; then
         echo "Error: Specify the project name as parameter"
         return 1
     fi
@@ -22,7 +22,7 @@ sproject() {
     # Change to the directory of the project
     cd $1
     DAYS=7
-    if [ "$#" = 1]; then
+    if [ "$#" = 1 ]; then
         echo "You didn't pass the number of duration days. Please specify (default $DAYS, min 1, max 30):"
         read input_days
         if [ -n "$input_days" ]; then
