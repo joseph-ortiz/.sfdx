@@ -1,2 +1,2 @@
 # .sfdx
-a sfdx dotfile
+a sfdx dotfile of alias sfdx commands
